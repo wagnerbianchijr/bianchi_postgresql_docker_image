@@ -28,6 +28,8 @@ ENV SSH_PORT=22
 RUN --mount=type=cache,target=/root/.cache.1 DEBIAN_FRONTEND=noninteractive apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
     gcc \
+    bison \
+    flex \
     build-essential \
     zlib1g-dev \
     libreadline6-dev \
